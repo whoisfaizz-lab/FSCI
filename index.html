@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGAZAH (آغاز) - FSC I Revision Batch</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        /* Define the primary neon color from the main landing page */
+        :root {
+            --neon-color: #38bdf8; /* sky-400 */
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #020617; /* Slate 950 - Deep Dark Blue */
+            color: #e2e8f0; /* Slate 200 - Light Text */
+            scroll-behavior: smooth;
+        }
+
+        /* Custom animation for the primary CTA pulse (copied from main page) */
+        @keyframes pulse-slow {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(56, 189, 248, 0.4); }
+            50% { box-shadow: 0 0 0 10px rgba(56, 189, 248, 0); }
+        }
+        .animate-pulse-slow {
+            animation: pulse-slow 3s infinite;
+        }
+
+        /* Dark Header Style matching the main page's look */
+        .dark-header {
+            background-color: rgba(2, 6, 23, 0.9);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+        }
+
+        /* Feature Card Hover Effect */
+        .feature-card-hover {
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        .feature-card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(56, 189, 248, 0.2);
+            border-top-color: var(--neon-color) !important;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header & Navigation (Dark, Sticky) -->
+    <header class="dark-header sticky top-0 z-10 shadow-lg border-b border-sky-900/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-extrabold text-white tracking-widest" style="text-shadow: 0 0 5px var(--neon-color);">
+                Examify <span class="text-sky-400">| AGAZAH (آغاز)</span>
+            </h1>
+            <!-- Updated WhatsApp Link for Agazah -->
+            <a href="https://wa.me/923108447871?text=Hi%2C%20I%20want%20to%20join%20the%20FSC%20I%20Prep%20Batch%20'AGAZAH'." 
+                target="_blank" 
+                class="px-5 py-2 text-sm font-semibold text-gray-900 bg-sky-400 rounded-full hover:bg-sky-300 transition duration-300 shadow-xl shadow-sky-400/30">
+                <svg class="w-4 h-4 inline-block mr-1 -mt-0.5" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12.04 2C6.545 2 2.14 6.31 2.13 11.66c0 1.83 0.5 3.53 1.37 5.04l-1.43 5.34 5.54-1.47c1.47 0.8 3.14 1.25 4.43 1.25 5.5 0 9.9-4.31 9.91-9.66s-4.4-9.66-9.91-9.66z"/>
+                </svg>
+                Enroll Now
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="pt-10 pb-20">
+
+        <!-- 1. Hero Section -->
+        <section class="max-w-4xl mx-auto text-center px-4 mb-16">
+            <!-- Updated Batch Name -->
+            <div class="bg-slate-800 inline-block px-4 py-2 rounded-full mb-4 border border-sky-600/50">
+                <p class="text-sm font-semibold text-sky-400 uppercase tracking-wider">FSC I Preparation Batch (XI)</p>
+            </div>
+            
+            <!-- Main Title -->
+            <h2 class="text-5xl md:text-6xl font-extrabold leading-tight text-white mb-2" style="text-shadow: 0 0 10px rgba(56, 189, 248, 0.5);">
+                <span class="text-sky-400">AGAZAH BATCH</span>
+            </h2>
+            <!-- New Subheading -->
+            <p class="text-2xl font-semibold text-gray-300 mb-6">(Target A+ Grades)</p>
+
+            <!-- Updated Description -->
+            <p class="text-xl text-gray-400 mb-8 max-w-2xl mx-auto">
+                The ultimate preparatory batch for new XI students. Start strong with focused, foundational preparation for your FSC I exams.
+            </p>
+
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4 mb-8">
+                <div class="bg-slate-800 p-4 rounded-xl shadow-2xl border border-sky-600/50">
+                    <p class="text-sm font-medium text-gray-400">Starting</p>
+                    <p class="text-xl font-bold text-white">1st August 2026</p>
+                </div>
+                <div class="bg-slate-800 p-4 rounded-xl shadow-2xl border border-sky-600/50">
+                    <p class="text-sm font-medium text-gray-400">Fee</p>
+                    <!-- FEE UPDATED HERE -->
+                    <p class="text-xl font-bold text-teal-400">Rs. 3000/- per month</p>
+                </div>
+            </div>
+
+            <!-- Primary CTA Button (WhatsApp Link) - High Impact Neon Style -->
+            <a href="https://wa.me/923108447871?text=Hi%2C%20I%20want%20to%20join%20the%20FSC%20I%20Prep%20Batch%20'AGAZAH'." 
+                target="_blank" 
+                class="inline-flex items-center justify-center w-full sm:w-auto px-10 py-4 border border-transparent text-xl font-bold rounded-full shadow-2xl text-gray-900 bg-sky-400 hover:bg-sky-300 focus:outline-none focus:ring-4 focus:ring-sky-400 focus:ring-opacity-50 transition duration-300 transform hover:scale-[1.03] animate-pulse-slow">
+                <svg class="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12.04 2C6.545 2 2.14 6.31 2.13 11.66c0 1.83 0.5 3.53 1.37 5.04l-1.43 5.34 5.54-1.47c1.47 0.8 3.14 1.25 4.43 1.25 5.5 0 9.9-4.31 9.91-9.66s-4.4-9.66-9.91-9.66z"/>
+                </svg>
+                DM to Join Now - Limited Slots!
+            </a>
+        </section>
+
+        <!-- 2. Core Features Section (Content kept the same as it represents general excellent study features) -->
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-20">
+            <h3 class="text-4xl font-extrabold text-white text-center mb-12">What Makes AGAZAH Unstoppable?</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Feature 1 -->
+                <div class="feature-card-hover bg-slate-800 p-6 rounded-xl border-t-4 border-sky-600">
+                    <div class="flex items-center space-x-4">
+                        <span class="text-sky-400 bg-sky-900/50 p-3 rounded-full shadow-lg shadow-sky-500/10">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2m-9 0V3h4v2m-4 0h4"></path></svg>
+                        </span>
+                        <h4 class="text-xl font-semibold text-white">Daily Topic-Wise Lectures</h4>
+                    </div>
+                    <p class="mt-4 text-gray-400">Focused, in-depth sessions ensuring every essential topic is covered thoroughly.</p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="feature-card-hover bg-slate-800 p-6 rounded-xl border-t-4 border-sky-600">
+                    <div class="flex items-center space-x-4">
+                        <span class="text-sky-400 bg-sky-900/50 p-3 rounded-full shadow-lg shadow-sky-500/10">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.832 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5s3.332.477 4.5 1.253v13C19.832 18.477 18.168 18 16.5 18s-3.332.477-4.5 1.253"></path></svg>
+                        </span>
+                        <h4 class="text-xl font-semibold text-white">Quick Revision Notes</h4>
+                    </div>
+                    <p class="mt-4 text-gray-400">Concise, high-yield notes for last-minute reading, saving you countless hours.</p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="feature-card-hover bg-slate-800 p-6 rounded-xl border-t-4 border-sky-600">
+                    <div class="flex items-center space-x-4">
+                        <span class="text-sky-400 bg-sky-900/50 p-3 rounded-full shadow-lg shadow-sky-500/10">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.01 12.01 0 002.944 12c.045 1.764.382 3.447.962 5.016l1.348 2.338.272.47c1.472 2.54 3.864 3.996 6.574 4.195 2.71-.199 5.102-1.655 6.574-4.195l.272-.47 1.348-2.338c.58-.569.917-1.252.962-2.016A12.01 12.01 0 0020.618 7.984z"></path></svg>
+                        </span>
+                        <h4 class="text-xl font-semibold text-white">Daily MCQ Practice</h4>
+                    </div>
+                    <p class="mt-4 text-gray-400">Build speed and accuracy with dedicated daily practice sessions on key concepts.</p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="feature-card-hover bg-slate-800 p-6 rounded-xl border-t-4 border-sky-600">
+                    <div class="flex items-center space-x-4">
+                        <span class="text-sky-400 bg-sky-900/50 p-3 rounded-full shadow-lg shadow-sky-500/10">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2m-9 0V3h4v2m-4 0h4m7 7l3 3m0 0l-3 3m3-3H4"></path></svg>
+                        </span>
+                        <h4 class="text-xl font-semibold text-white">Chapter-Wise Tests</h4>
+                    </div>
+                    <p class="mt-4 text-gray-400">Consolidate knowledge after every chapter with focused assessment tests.</p>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="feature-card-hover bg-slate-800 p-6 rounded-xl border-t-4 border-sky-600">
+                    <div class="flex items-center space-x-4">
+                        <span class="text-sky-400 bg-sky-900/50 p-3 rounded-full shadow-lg shadow-sky-500/10">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 19c-1.396 0-2.697-.442-3.79-1.215L12 17l-3.21 1.785A7.987 7.987 0 015 19v-2.128a3.1 3.1 0 011.89-2.822L12 11l5.11 3.05a3.1 3.1 0 011.89 2.822V19z"></path></svg>
+                        </span>
+                        <h4 class="text-xl font-semibold text-white">Past Paper-Based MCQs</h4>
+                    </div>
+                    <p class="mt-4 text-gray-400">Practice questions pulled directly from previous years to understand exam trends.</p>
+                </div>
+
+                <!-- Feature 6 -->
+                <div class="feature-card-hover bg-slate-800 p-6 rounded-xl border-t-4 border-sky-600">
+                    <div class="flex items-center space-x-4">
+                        <span class="text-sky-400 bg-sky-900/50 p-3 rounded-full shadow-lg shadow-sky-500/10">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        </span>
+                        <h4 class="text-xl font-semibold text-white">High-Yield Topic Coverage</h4>
+                    </div>
+                    <p class="mt-4 text-gray-400">Maximize marks by focusing on the topics that carry the most weight in the exam.</p>
+                </div>
+                
+                <!-- Feature 7 -->
+                <div class="feature-card-hover bg-slate-800 p-6 rounded-xl border-t-4 border-sky-600">
+                    <div class="flex items-center space-x-4">
+                        <span class="text-sky-400 bg-sky-900/50 p-3 rounded-full shadow-lg shadow-sky-500/10">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7a4 4 0 00-4-4h-4v8h8V7zm-2 10a4 4 0 00-4-4h-4v8h8v-4z"></path></svg>
+                        </span>
+                        <h4 class="text-xl font-semibold text-white">Full-Length Exam Mocks</h4>
+                    </div>
+                    <p class="mt-4 text-gray-400">Simulate the real exam environment with exam-lookalike papers for peak performance.</p>
+                </div>
+
+                <!-- Feature 8 -->
+                <div class="feature-card-hover bg-slate-800 p-6 rounded-xl border-t-4 border-sky-600">
+                    <div class="flex items-center space-x-4">
+                        <span class="text-sky-400 bg-sky-900/50 p-3 rounded-full shadow-lg shadow-sky-500/10">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 8v8m-4-5v5m-4-2v2m-2 4h12a2 2 0 002-2V7a2 2 0 00-2-2H6a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        </span>
+                        <h4 class="text-xl font-semibold text-white">Weekly Progress Tracking</h4>
+                    </div>
+                    <p class="mt-4 text-gray-400">Stay accountable! Regular reports help identify and focus on weak areas.</p>
+                </div>
+
+                <!-- Feature 9 -->
+                <div class="feature-card-hover bg-slate-800 p-6 rounded-xl border-t-4 border-sky-600">
+                    <div class="flex items-center space-x-4">
+                        <span class="text-sky-400 bg-sky-900/50 p-3 rounded-full shadow-lg shadow-sky-500/10">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 4v-4z"></path></svg>
+                        </span>
+                        <h4 class="text-xl font-semibold text-white">Direct Message (DM) Support</h4>
+                    </div>
+                    <p class="mt-4 text-gray-400">Get your doubts cleared directly with our dedicated and responsive support system.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Final CTA Banner -->
+        <section class="mt-20 py-12 bg-slate-900 border-t border-sky-900">
+            <div class="max-w-4xl mx-auto text-center px-4">
+                <h3 class="text-3xl font-extrabold text-white mb-4">Ready to Make the Perfect AGAZAH (Start)?</h3>
+                <p class="text-lg text-gray-400 mb-8">If you're serious about laying a strong foundation for FSC I, don't miss this opportunity. Limited slots only!</p>
+                
+                <!-- Secondary CTA Button (WhatsApp Link) - High Visibility -->
+                <a href="https://wa.me/923108447871?text=Hi%2C%20I%20want%20to%20join%20the%20FSC%20I%20Prep%20Batch%20'AGAZAH'." 
+                    target="_blank" 
+                    class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-xl font-bold rounded-full shadow-2xl text-gray-900 bg-sky-400 hover:bg-sky-300 focus:outline-none focus:ring-4 focus:ring-sky-400 focus:ring-opacity-50 transition duration-300 transform hover:scale-[1.03]">
+                    <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12.04 2C6.545 2 2.14 6.31 2.13 11.66c0 1.83 0.5 3.53 1.37 5.04l-1.43 5.34 5.54-1.47c1.47 0.8 3.14 1.25 4.43 1.25 5.5 0 9.9-4.31 9.91-9.66s-4.4-9.66-9.91-9.66z"/>
+                    </svg>
+                    CLICK HERE to Secure Your Spot
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 border-t border-slate-700 text-white py-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-sm text-gray-500">&copy; 2025 AGAZAH Batch. A part of Examify.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
